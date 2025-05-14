@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   build: {
@@ -12,6 +13,11 @@ export default defineConfig({
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['react'],
     }
-  }
-
+  },
+  plugins: [
+    dts({
+      insertTypesEntry: true,
+      outDir: 'dist/types',
+    })
+  ]
 })
