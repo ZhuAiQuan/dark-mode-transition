@@ -1,6 +1,6 @@
 {
   "name": "dark-mode-transition",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
@@ -17,6 +17,7 @@
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/dark-mode-transition.es.js",
       "require": "./dist/dark-mode-transition.umd.js"
     }
