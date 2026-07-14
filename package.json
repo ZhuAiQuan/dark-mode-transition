@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "build": "tsc && vite build",
     "prepublishOnly": "npm run build"
   },
